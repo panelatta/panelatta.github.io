@@ -1,19 +1,36 @@
 ---
+layout: post
+cid: 64
 title: hexo在不同电脑间迁移
-tags: []
-date: 2018-05-21 19:17:00
+slug: 64
+date: 2018/05/21 19:17:00
+updated: 2018/06/10 20:24:28
+status: publish
+author: Panelatta
+categories: 
+  - hexo
+tags: 
+  - hexo
+thumb: 
+thumbStyle: small
+viewsNum: 233
 ---
+
 
 hexo部署到github上的文件是你本地的文件（.md）编译成的静态网页（.html），因此当你想要在不同设备间修改博客，或者是重装系统导致博客配置丢失后修改博客就变成了比较麻烦的事情。
 
 其实，hexo生成的网站文件中有`.gitignore`文件，所以它的本意也是让你把博客的源文件上传到github上进行管理。今天我们就介绍一种方法，这种方法通过**在博客挂在的github仓库中设立一个新的分支hexo，然后将博客源文件以及环境配置和主题配置文件上传到hexo分支（设置为默认主分支），将master分支用作进行博文的deploy工作，这样每次需要重新配置时只需要重新clone一下，之后安装相关环境就可以了。**
-<!--more-->> 1.  建立master和hexo两个分支
-> 2.  安装相关环境和本地配置
-> 
->     1.  git clone
->     2.  备份更新`./themes`主题配置文件
->     3.  安装hexo
-> 3.  博客的日常更新
+
+
+<!--more-->
+
+
+>1. 建立master和hexo两个分支
+>2. 安装相关环境和本地配置
+>   1. git clone
+>   2. 备份更新`./themes`主题配置文件
+>   3. 安装hexo
+>3. 博客的日常更新
 
 ## 建立master和hexo两个分支
 
@@ -27,7 +44,7 @@ master分支已经是默认建好的，我们只需修改`_config.yml`中的depl
 
 先从网上下载Node.js和git，之后使用
 
-`git clone git@github.com:&lt;yourname&gt;/&lt;yourname&gt;.github.io`
+`git clone git@github.com:<yourname>/<yourname>.github.io`
 
 拷贝仓库。
 
@@ -55,7 +72,7 @@ master分支已经是默认建好的，我们只需修改`_config.yml`中的depl
 
 `git add .`
 
-`git commit -m &quot;...&quot;`
+`git commit -m "..."`
 
 `git push origin hexo`
 
