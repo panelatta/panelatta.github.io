@@ -2,6 +2,7 @@
 title: katex-test
 date: 2019-11-11 12:36:28
 tags:
+mathjax: true
 ---
 
 ok lets have a test about showing latex formula

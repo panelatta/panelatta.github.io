@@ -32,5 +32,8 @@
   },
   "engines": {
     "node": ">=8.6.0"
+  },
+  "dependencies": {
+    "hexo-renderer-markdown-it-plus": "^1.0.4"
   }
 }
