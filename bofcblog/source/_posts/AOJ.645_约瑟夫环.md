@@ -2,13 +2,13 @@
 layout: post
 cid: 26
 title: AOJ.645 约瑟夫环
-slug: 26
-date: 2017/11/21 22:32:00
-updated: 2018/06/10 20:33:15
+
+date: 2017-11-21 22:32:00
+updated: 2018-06-10 20:33:15
 status: publish
 author: Panelatta
 categories: 
-  - Basic --- Thoughts
+  - "Basic --- Thoughts"
 tags: 
   - ACM题解
 thumb: 

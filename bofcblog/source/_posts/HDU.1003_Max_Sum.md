@@ -2,13 +2,13 @@
 layout: post
 cid: 38
 title: HDU.1003 Max Sum
-slug: 38
-date: 2018/02/09 22:59:00
-updated: 2018/06/10 20:32:32
+
+date: 2018-02-09 22:59:00
+updated: 2018-06-10 20:32:32
 status: publish
 author: Panelatta
 categories: 
-  - Basic --- Thoughts
+  - "Basic --- Thoughts"
 tags: 
   - ACM题解
 thumb: 

@@ -2,9 +2,9 @@
 layout: post
 cid: 137
 title: H. Ryuji doesn't want to study (树状数组) [2018 ACM-ICPC Xuzhou Online Contest]
-slug: 137
-date: 2018/09/09 21:10:00
-updated: 2019/08/16 15:50:50
+
+date: 2018-09-09 21:10:00
+updated: 2019-08-16 15:50:50
 status: publish
 author: Panelatta
 categories: 
@@ -23,11 +23,11 @@ viewsNum: 243
 
 ### Description
 
-Ryuji is not a good student, and he doesn't want to study. But there are n books he should learn, each book has its knowledge $ a[i] $.
+Ryuji is not a good student, and he doesn't want to study. But there are n books he should learn, each book has its knowledge $a[i]$.
 
 Unfortunately, the longer he learns, the fewer he gets.
 
-That means, if he reads books from ll to rr, he will get $a[l] \times L + a[l+1] \times (L-1) + \cdots + a[r-1] \times 2 + a[r]$ ($L$ is the length of [ $ l, r $ ] that equals to $r - l + 1$).
+That means, if he reads books from ll to rr, he will get $a[l] \times L + a[l+1] \times (L-1) + \cdots + a[r-1] \times 2 + a[r]$($L$is the length of [ $ l, r$ ] that equals to$r - l + 1$).
 
 Now Ryuji has $q$ questions, you should answer him:
 
@@ -37,11 +37,11 @@ Now Ryuji has $q$ questions, you should answer him:
 
 ### Input
 
-First line contains two integers $n$ and $q$ ($n, q \le 100000$).
+First line contains two integers $n$and$q$ ($n, q \le 100000$).
 
 The next line contains n integers represent $a[i]$ $(a[i]≤1e9)$ .
 
-Then in next $q$ line each line contains three integers $a, b, c$, if $a = 1$, it means question type is $1$, and $b, c$ represents [ $l , r$ ]. if $a = 2$ , it means question type is $2$ , and $b, c$ means Ryuji changes the $b$th book's knowledge to $c$ .
+Then in next $q$line each line contains three integers $a, b, c$, if $a = 1$, it means question type is $1$, and $b, c$represents [ $l , r$]. if $a = 2$, it means question type is$2$ , and$b, c$ means Ryuji changes the$b$th book's knowledge to$c$ .
 
 ### Output
 
@@ -74,7 +74,7 @@ $a[l] \times L + a[l+1] \times (L-1) + \cdots + a[r-1] \times 2 + a[r]$
 - = $\sum\limits_{k=l}^{r}(r-k+1) \cdot a[k]$
 - = $(r+1)\sum\limits_{k=l}^{r}a[k]-\sum\limits_{k=l}^{r}k \cdot a[k]$
 
-又，题中所给两种操作分别为区间查询，单点修改；因此用树状数组直接维护 $a[k]$ 和 $k \cdot a[k]$ 的值即可。
+又，题中所给两种操作分别为区间查询，单点修改；因此用树状数组直接维护 $a[k]$和$k \cdot a[k]$ 的值即可。
 
 ## 代码
 

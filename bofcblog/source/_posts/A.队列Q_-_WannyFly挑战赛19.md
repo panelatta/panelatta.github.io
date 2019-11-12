@@ -2,13 +2,13 @@
 layout: post
 cid: 99
 title: A.队列Q - WannyFly挑战赛19
-slug: 99
-date: 2018/07/07 01:14:00
-updated: 2019/08/16 15:57:07
+
+date: 2018-07-07 01:14:00
+updated: 2019-08-16 15:57:07
 status: publish
 author: Panelatta
 categories: 
-  - Basic --- Thoughts
+  - "Basic --- Thoughts"
 tags: 
   - ACM题解
 thumb: 

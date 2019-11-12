@@ -2,9 +2,9 @@
 layout: post_draft
 cid: 255
 title: Lagrangian Duality I. Definition
-slug: @255
-date: 2019/10/28 20:48:00
-updated: 2019/10/28 21:29:14
+
+date: 2019-10-28 20:48:00
+updated: 2019-10-28 21:29:14
 status: publish
 author: Panelatta
 categories: 
@@ -53,7 +53,7 @@ $$
 \end{cases}
 $$
 
-> ${\bf P{\scriptsize ROOF}.}$ 若 $\exists\, i\in[1:n]$ 使得 $c_i({\bf x})\geq0$ ，则可调整 $\alpha_i$ 使 $\theta_P \rightarrow +\infty$；同理，若 $\exists\, j \in [1:m]$ 使得 $h_j({\bf x}) \neq 0$，则可调整 $\beta_j h_j({\bf x})$ 使得 $\theta_P \rightarrow +\infty$。 $\blacksquare$
+> ${\bf P{\scriptsize ROOF}.}$若 $\exists\, i\in[1:n]$使得 $c_i({\bf x})\geq0$，则可调整 $\alpha_i$使 $\theta_P \rightarrow +\infty$；同理，若 $\exists\, j \in [1:m]$ 使得$h_j({\bf x}) \neq 0$，则可调整$\beta_j h_j({\bf x})$ 使得$\theta_P \rightarrow +\infty$。$\blacksquare$
 
 因此，$(1)$ 的最优解为
 
@@ -75,14 +75,14 @@ f({\bf x}) &< d^* \\
 \tag{2}
 $$
 
-无解时，$d^*$ 是 $p^*$ 的一个下界。同时，$(2)$ 有解当且仅当对 $\forall \boldsymbol{\alpha},\boldsymbol{\beta}$ 均有
+无解时，$d^*$是 $p^*$ 的一个下界。同时，$(2)$ 有解当且仅当对$\forall \boldsymbol{\alpha},\boldsymbol{\beta}$ 均有
 
 $$
 f({\bf x})+\boldsymbol{\alpha}^\top {\bf c}({\bf x})+\boldsymbol{\beta}^\top{\bf h}({\bf x}) < d^*
 \tag{3}
 $$
 
-同时 $(3)$ 无解的充要条件是 $\exists\boldsymbol{\alpha '},\boldsymbol{\beta '}$ 使得
+同时 $(3)$无解的充要条件是$\exists\boldsymbol{\alpha '},\boldsymbol{\beta '}$ 使得
 
 $$
 \min_{\bf x} \left( f({\bf x})+\boldsymbol{\alpha '}^\top{\bf c}({\bf x})+\boldsymbol{\beta '}^\top{\bf h}({\bf x}) \right) \geq d^*
@@ -98,7 +98,7 @@ d^* &= \max_{\boldsymbol{\alpha},\boldsymbol{\beta}}\min_{\bf x} \left( f({\bf x
 \tag{4}
 $$
 
-注意到 $d^*$ 与 $p^*$ 对 $\mathcal{L}({\bf x}, \boldsymbol{\alpha}, \boldsymbol{\beta})$ 取最值的顺序恰好相反，称 $d^*$ 对应的问题是原问题的 Dual Problem。至此，引入函数
+注意到 $d^*$与 $p^*$对$\mathcal{L}({\bf x}, \boldsymbol{\alpha}, \boldsymbol{\beta})$ 取最值的顺序恰好相反，称$d^*$ 对应的问题是原问题的 Dual Problem。至此，引入函数
 
 $$
 \theta_D({\bf x}) = \max_{\boldsymbol{\alpha},\boldsymbol{\beta}}\mathcal{L}({\bf x}, \boldsymbol{\alpha}, \boldsymbol{\beta})
@@ -115,7 +115,7 @@ $$
 
 ${\bf T{\scriptsize HEOREM}\;1}.\;\;{\rm W{\scriptsize EAK}\;D{\scriptsize UALITY}.}$
 
-假设 $p^*$ 与 $d^*$ 均存在，则
+假设 $p^*$与$d^*$ 均存在，则
 
 $$
 \boxed{d^* \leq p^*.}
@@ -143,9 +143,9 @@ $$
 
 由此可给出如下引理：
 
-${\bf C{\scriptsize OROLLARY}\;\;1}.$ 若 $p^*$ 与 $d^*$ 均存在且有 $p^* = d^*$，则 Primal Problem 和 Dual Problem 的可行解 $({\bf x}^*, \boldsymbol{\alpha}^*, \boldsymbol{\beta}^*)$ 分别也是对应问题的最优解。
+${\bf C{\scriptsize OROLLARY}\;\;1}.$若 $p^*$与 $d^*$ 均存在且有$p^* = d^*$，则 Primal Problem 和 Dual Problem 的可行解$({\bf x}^*, \boldsymbol{\alpha}^*, \boldsymbol{\beta}^*)$ 分别也是对应问题的最优解。
 
-因此，一旦 $p^* = d^*$ 成立，则可以经由计算 Dual Problem 来获得 Primal Problem 的解；称 $p^* = d^*$ 为 Strong Duality。
+因此，一旦 $p^* = d^*$成立，则可以经由计算 Dual Problem 来获得 Primal Problem 的解；称$p^* = d^*$ 为 Strong Duality。
 
 $$
 \newcommand{\bm}[1]{\boldsymbol{#1}}

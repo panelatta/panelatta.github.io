@@ -2,13 +2,13 @@
 layout: post
 cid: 61
 title: AOJ.1301 差除
-slug: 61
-date: 2018/03/24 19:15:00
-updated: 2018/06/10 20:30:05
+
+date: 2018-03-24 19:15:00
+updated: 2018-06-10 20:30:05
 status: publish
 author: Panelatta
 categories: 
-  - Basic --- Thoughts
+  - "Basic --- Thoughts"
 tags: 
   - ACM题解
 thumb: 

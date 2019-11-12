@@ -2,13 +2,13 @@
 layout: post
 cid: 28
 title: HDU.2025 查找最大元素
-slug: 28
-date: 2017/12/19 22:34:00
-updated: 2018/06/10 20:33:06
+
+date: 2017-12-19 22:34:00
+updated: 2018-06-10 20:33:06
 status: publish
 author: Panelatta
 categories: 
-  - Basic --- Thoughts
+  - "Basic --- Thoughts"
 tags: 
   - ACM题解
 thumb: 

@@ -2,9 +2,9 @@
 layout: post
 cid: 177
 title: Notes For Discrete-Time System Analysis [Chapter I. Fundamental Concepts]
-slug: 177
-date: 2019/06/20 21:46:00
-updated: 2019/08/27 17:23:38
+
+date: 2019-06-20 21:46:00
+updated: 2019-08-27 17:23:38
 status: publish
 author: Panelatta
 categories: 
@@ -22,13 +22,13 @@ viewsNum: 82
 
 #### ***Discrete-time Variable*** 	
 
-If the time variable $t$ only takes on discrete values $t=t_{n}$ for some range of integer values of $n$, then $t$ is called **discrete-time variable**.
+If the time variable $t$only takes on discrete values $t=t_{n}$for some range of integer values of$n$, then$t$ is called **discrete-time variable**.
 
 #### ***Discrete-time Signal*** 		
 
-If a continuous-time signal $x(t)$ is a function of discrete-time variable $t_{n}$, then the signal $x(t_{n})$ is a **discrete-time signal**, which is called the **sampled version** of the continuous-time function $x(t)$.
+If a continuous-time signal $x(t)$is a function of discrete-time variable $t_{n}$, then the signal $x(t_{n})$ is a **discrete-time signal**, which is called the **sampled version** of the continuous-time function$x(t)$.
 
-If we let $t_{n}=nT$ , then obviously $T$ is the **sampling interval**. When $T$ is a constant, such a sampling process is called **uniform sampling**, instead, **nonuniform sampling**. Then we could write $x(t_{n})$ in form of $ x[n]$, in which **square brackets** is needed. And also, $x[n] = x(t_{n}) = x(t)|_{t=nT}=x(nT)$ .
+If we let $t_{n}=nT$, then obviously $T$is the **sampling interval**. When $T$is a constant, such a sampling process is called **uniform sampling**, instead, **nonuniform sampling**. Then we could write$x(t_{n})$ in form of$ x[n]$, in which **square brackets** is needed. And also,$x[n] = x(t_{n}) = x(t)|_{t=nT}=x(nT)$ .
 
 #### ***Some typical examples of discrete-time signals***
 
@@ -40,7 +40,7 @@ u[n] = \left\{\begin{matrix} 1,n=0,1,2, \cdots \\
 \end{matrix}\right.
 $$
 
-![](https://i.loli.net/2019/06/20/5d0b38b90175771534.png)
+![](https://i.loli.net/2019-06-20/5d0b38b90175771534.png)
 
 ##### *Discrete-Time Unit-Ramp Function*
 
@@ -48,7 +48,7 @@ $$
 r[n]=nu[n]=\left\{\begin{matrix} n, n=0,1,2,\cdots \\ 0,n=-1,-2,-3,\cdots \end{matrix}\right.
 $$
 
-![](https://i.loli.net/2019/06/20/5d0b38e8e40a147543.png)
+![](https://i.loli.net/2019-06-20/5d0b38e8e40a147543.png)
 
 ##### *Unit Pulse*
 
@@ -56,17 +56,17 @@ $$
 \delta[n] = \left\{\begin{matrix} 1,n=0 \\ 0,n \neq 0 \end{matrix}\right.
 $$
 
-![](https://i.loli.net/2019/06/20/5d0b39103259212957.png)
+![](https://i.loli.net/2019-06-20/5d0b39103259212957.png)
 
 ##### *Periodic Discrete-Time Signals* 	
 
-For a discrete-time signal $x[n]$, if there exists a *positive* integer $r$ which makes that $x[n+r]=x[n]$ **for all integers n**, Then $x[n]$ is called a **periodic discrete-time signal** and  the integer $r$ is **period**. **Fundamental period** is the smallest value for positive integer $r$.
+For a discrete-time signal $x[n]$, if there exists a *positive* integer $r$which makes that $x[n+r]=x[n]$**for all integers n**, Then $x[n]$ is called a **periodic discrete-time signal** and  the integer$r$ is **period**. **Fundamental period** is the smallest value for positive integer$r$.
 
 > For example, if we let $x[n]=A\mathrm{cos}(\Omega n + \theta)$, then the signal is periodic if $x[n+r]=A\mathrm{cos}(\Omega (n + r)+\theta) = A\mathrm{cos}(\Omega n+\theta)$ . 
 >
-> Cause $\mathrm{cos}$ is periodic, there is $A\mathrm{cos}(\Omega n + \theta) = A\mathrm{cos}(\Omega n + 2 \pi q + \theta)$ for *all* integers $q$ .
+> Cause $\mathrm{cos}$is periodic, there is $A\mathrm{cos}(\Omega n + \theta) = A\mathrm{cos}(\Omega n + 2 \pi q + \theta)$ for *all* integers$q$ .
 >
-> Obviously, $x[n]$ is periodic when there exists an integer $r$ which makes $\Omega r = 2 \pi q$ for *some* integers $q$, in equivalent, the **discrete-time frequency** $\Omega = \dfrac{2 \pi q}{r}$ for some integers $q,r$.
+> Obviously, $x[n]$is periodic when there exists an integer $r$which makes $\Omega r = 2 \pi q$for *some* integers$q$, in equivalent, the **discrete-time frequency**$\Omega = \dfrac{2 \pi q}{r}$ for some integers$q,r$.
 
 ##### *Discrete-Time Complex Exponential Signals* 
 
@@ -74,7 +74,7 @@ $$
 x[n]=Ca^{n}=|C||a|^{n}\mathrm{cos}(\omega _{0}n+\theta)+j|C||a|^{n}\mathrm{sin}(\omega _{0}n + \theta)
 $$
 
-where $C = |C|e^{j\theta}$ and $a = |a|e^{j\omega _{0}}$ .
+where $C = |C|e^{j\theta}$and$a = |a|e^{j\omega _{0}}$ .
 
 ##### *Discrete-Time Rectangular Pulse*
 
@@ -84,11 +84,11 @@ $$
 
 where $L$ is a **positive odd integer**. 
 
-![](https://i.loli.net/2019/06/20/5d0b46dd9fea199029.png)
+![](https://i.loli.net/2019-06-20/5d0b46dd9fea199029.png)
 
 ##### *Digital Signals*
 
-When a discrete-time signal $x[n]$ satiesfies that its values are all belongs to a **finite** set $\left\{ a_{1},a_{2},\cdots,a_{n} \}\right.$ , then the signal called a **digital signal**. 
+When a discrete-time signal $x[n]$satiesfies that its values are all belongs to a **finite** set$\left\{ a_{1},a_{2},\cdots,a_{n} \}\right.$ , then the signal called a **digital signal**. 
 
 However, the sampled signals don't have to be digital signals. For example, the sampled unit-ramp function values on a infinite set $\left\{ 0,1,2,\cdots \}\right.$.
 
@@ -96,12 +96,12 @@ However, the sampled signals don't have to be digital signals. For example, the 
 
 ##### *Time-Shifted Signals*
 
-Giving a discrete-time signal $x[n]$ and a positive integer $q$ , then
+Giving a discrete-time signal $x[n]$and a positive integer$q$ , then
 
-- $x[n-q]$ is the $q$-step right shifts of $x[n]$
-- $x[n + q]$ is the $q$-step left shifts of $x[n]$
+- $x[n-q]$is the $q$-step right shifts of$x[n]$
+- $x[n + q]$is the $q$-step left shifts of$x[n]$
 
-![](https://i.loli.net/2019/06/20/5d0b4eceaf51646810.png)
+![](https://i.loli.net/2019-06-20/5d0b4eceaf51646810.png)
 
 ##### *Discrete-Time Signals defined Interval by Interval*
 
@@ -109,7 +109,7 @@ Discrete-Time Signals also may be defined **Interval by Interval**. For example,
 $$
 x[n]=\left\{\begin{matrix} x_{1}[n],\;n_{1}\leq n < n_{2} \\ x_{2}[n],\;n_{2} \leq n < n_{3} \\ x_{3}[n], \; n \geq n_{3} \end{matrix}\right.
 $$
-Cause the Unit-Step Function satisfies when $n \geq 0$ , $u[n]=1$ , we can use it to write $x[n]$ in such a form
+Cause the Unit-Step Function satisfies when $n \geq 0$, $u[n]=1$ , we can use it to write$x[n]$ in such a form
 $$
 x[n]=x_{1}[n]\cdot(u[n-n_{1}]-u[n-n_{2}])
 +x_{2}[n]\cdot(u[n-n_{2}] - u[n - n_{3}]) 
@@ -127,7 +127,7 @@ The **Discrete-Time System** is a system which transforms discrete-time inputs t
 
 The **Discrete-Time System Analysis** is a process to solve the discrete-time output with discrete-time inputs and discrete-time system.
 
-> For example. Consider the differential equation $\dfrac{dv(t)}{dt}+av(t)=bx(t)$ , now we resolve time into discrete interval forms of length $\bigtriangleup$ , so the equation will become
+> For example. Consider the differential equation $\dfrac{dv(t)}{dt}+av(t)=bx(t)$, now we resolve time into discrete interval forms of length$\bigtriangleup$ , so the equation will become
 > $$
 > \frac{v(n\bigtriangleup)-v((n-1)\bigtriangleup)}{\bigtriangleup}+av(n \bigtriangleup)=bx(n \bigtriangleup)
 > $$
@@ -144,7 +144,7 @@ The **Discrete-Time System Analysis** is a process to solve the discrete-time ou
 
 #### ***System with or without memory***
 
-Given a discrete-time system with input of $x[n]$ and output with $y[n]$ , we call the system **memoryless** when $y[n]$ is only related to input at present time, otherwise we call it is the one **with memory**.
+Given a discrete-time system with input of $x[n]$and output with $y[n]$ , we call the system **memoryless** when$y[n]$ is only related to input at present time, otherwise we call it is the one **with memory**.
 
 > For example,
 > $$
@@ -162,7 +162,7 @@ Given a discrete-time system with input of $x[n]$ and output with $y[n]$ , we ca
 
 #### ***Causality***
 
-Given a discrete-time system with input of $x[n]$ and output with $y[n]$ , we call the system **causal** when $y[n]$ is only related to input at present and past time, or we call it not causal.
+Given a discrete-time system with input of $x[n]$and output with $y[n]$ , we call the system **causal** when$y[n]$ is only related to input at present and past time, or we call it not causal.
 
 > For example,
 > $$
@@ -176,17 +176,17 @@ Given a discrete-time system with input of $x[n]$ and output with $y[n]$ , we ca
 > $$
 > y[n]=x[-n]
 > $$
-> is also not because when $n$ is negative, there is $-n > n$ .
+> is also not because when $n$is negative, there is$-n > n$ .
 
 #### ***Time Invariance***
 
-To a discrete-time system with input of $x[n]$ and output of $y[n]$ , we call the system **time invariant** when a time shifts in the input signal results identical time shifts in the output signal. This is also to say, output $y[n]$ is not explicity related on the varaible of time.
+To a discrete-time system with input of $x[n]$and output of $y[n]$ , we call the system **time invariant** when a time shifts in the input signal results identical time shifts in the output signal. This is also to say, output$y[n]$ is not explicity related on the varaible of time.
 
 > For example,
 > $$
 > y[n]=(n+1)x[n]
 > $$
-> is not time invariant because $y[n]$ has an explicit relationship with time variable $n$. 
+> is not time invariant because $y[n]$has an explicit relationship with time variable$n$. 
 >
 > and, the system
 > $$
@@ -204,21 +204,21 @@ To a discrete-time system with input of $x[n]$ and output of $y[n]$ , we call th
 
 A system is to be called a **linear system** when the input consists of a weighted sum of several signals, the output will also be a weighted sum of the responses of the system for each of those signals.
 
-To make a proof of a system to be in linearity, we let $y_{1}[n]$ is the response of the system to the input $x_{1}[n]$ , and $y_{2}[n]$ is the response of the input $x_{2}[n]$ . The system is a linear system if and only if
+To make a proof of a system to be in linearity, we let $y_{1}[n]$is the response of the system to the input $x_{1}[n]$, and$y_{2}[n]$ is the response of the input$x_{2}[n]$ . The system is a linear system if and only if
 
 - **Addivity Property**
 
-  The response to $x_{1}[n]+x_{2}[n]$ is $y_{1}[n]+y_{2}[n]$.
+  The response to $x_{1}[n]+x_{2}[n]$is$y_{1}[n]+y_{2}[n]$.
 
 - **Homogeneity Property**
 
-  The response to $ax_{1}[n]$ is $ay_{1}[n]$, for $a$ is any complex constant.
+  The response to $ax_{1}[n]$is $ay_{1}[n]$, for$a$ is any complex constant.
 
 It's interesting to find that a system with a linear equation may not be a linear system. 
 
 For example, considering the system $y[n]=2x[n]+3$, it's easy to find the system is not linear, because
 
-> For two inputs $x_{1}[n]$ and $x_{2}[n]$, there are
+> For two inputs $x_{1}[n]$and$x_{2}[n]$, there are
 >
 > $x_{1}[n] \rightarrow y_{1}[n]=2x_{1}[n]+3$ 
 >
@@ -228,5 +228,5 @@ For example, considering the system $y[n]=2x[n]+3$, it's easy to find the system
 >
 > $y_{3}[n]=2(x_{1}[n] + x_{2}[n])+3 \neq y_{1}[n]+y_{2}[n]$.
 
-Notice that $y[n]=3$ when $x[n]=0$, it reminds us that the system violates the "zero-in/zero-out" property and the zero-input response of the system is $y_{0}[n]=3$.
+Notice that $y[n]=3$when $x[n]=0$, it reminds us that the system violates the "zero-in/zero-out" property and the zero-input response of the system is$y_{0}[n]=3$.
 

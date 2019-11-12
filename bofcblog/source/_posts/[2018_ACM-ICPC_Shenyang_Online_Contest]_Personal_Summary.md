@@ -1,10 +1,10 @@
 ---
 layout: post
 cid: 129
-title: [2018 ACM-ICPC Shenyang Online Contest] Personal Summary
-slug: 129
-date: 2018/09/08 21:11:00
-updated: 2019/08/16 15:51:20
+title: \[2018 ACM-ICPC Shenyang Online Contest\] Personal Summary
+
+date: 2018-09-08 21:11:00
+updated: 2019-08-16 15:51:20
 status: publish
 author: Panelatta
 categories: 

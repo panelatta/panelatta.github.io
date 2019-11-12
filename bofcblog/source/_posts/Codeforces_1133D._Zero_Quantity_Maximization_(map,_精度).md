@@ -2,9 +2,9 @@
 layout: post
 cid: 150
 title: Codeforces 1133D. Zero Quantity Maximization (map, 精度)
-slug: 150
-date: 2019/03/10 14:41:00
-updated: 2019/08/16 15:49:26
+
+date: 2019-03-10 14:41:00
+updated: 2019-08-16 15:49:26
 status: publish
 author: Panelatta
 categories: 
@@ -23,9 +23,9 @@ viewsNum: 314
 
 ### Description
 
-You are given two arrays $a$ and $b$, each contains $n$ integers.
+You are given two arrays $a$and $b$, each contains$n$ integers.
 
-You want to create a new array $c$ as follows: choose some real (i.e. not necessarily integer) number $d$, and then for every $i \in [1, n]$ let $c_i := d \cdot a_i + b_i$.
+You want to create a new array $c$as follows: choose some real (i.e. not necessarily integer) number $d$, and then for every $i \in [1, n]$ let$c_i := d \cdot a_i + b_i$.
 
 Your goal is to maximize the number of zeroes in array $c$. What is the largest possible answer, if you choose $d$ optimally?
 
@@ -33,9 +33,9 @@ Your goal is to maximize the number of zeroes in array $c$. What is the largest 
 
 The first line contains one integer $n$ ($1 \le n \le 2 \cdot 10^5$) — the number of elements in both arrays.
 
-The second line contains $n$ integers $a_1$, $a_2$, ..., $a_n$ ($-10^9 \le a_i \le 10^9$).
+The second line contains $n$integers $a_1$, $a_2$, ...,$a_n$ ($-10^9 \le a_i \le 10^9$).
 
-The third line contains $n$ integers $b_1$, $b_2$, ..., $b_n$ ($-10^9 \le b_i \le 10^9$).
+The third line contains $n$integers $b_1$, $b_2$, ...,$b_n$ ($-10^9 \le b_i \le 10^9$).
 
 ### Output
 
@@ -111,19 +111,19 @@ In the fourth example, we may choose $d = 6$.
 
 ## 题目大意
 
-给出两个长度为 $n$ $(1 \leq n \leq 2 \cdot 10^{5})$ 的数组 $a$ 和 $b$ ，求实数 $d$ 使得对所有 $i \in [1, n]$ 计算下式
+给出两个长度为 $n$$(1 \leq n \leq 2 \cdot 10^{5})$的数组 $a$和$b$ ，求实数$d$ 使得对所有$i \in [1, n]$ 计算下式
 $$
 c[i] = d \cdot a[i] + b[i]
 $$
-数组 $c$ 中 $0$ 的数目尽可能多。
+数组 $c$中$0$ 的数目尽可能多。
 
 ## 题解
 
 ### 分析
 
-令 $d \cdot a[i] + b[i] = 0$，则有 $d = -\dfrac{b[i]}{a[i]}$ 。但 $d$ 会爆 `double` 精度，此时用 `pair` 维护 `<-b[i] / gcd, a[i] / gcd>` 即可。但此时要注意处理 `b[i]` 与 `a[i]` 的正负号关系（e.g.  $\dfrac{1}{1} = \dfrac{-1}{-1}$ ，但在直接按此存储则会导致被认作为不同的值）。也可用 `long double` 维护 $d$ 。之后用 `map` 统计出现次数最多的 `d` 即可。
+令 $d \cdot a[i] + b[i] = 0$，则有 $d = -\dfrac{b[i]}{a[i]}$。但 $d$会爆 `double` 精度，此时用 `pair` 维护 `<-b[i] / gcd, a[i] / gcd>` 即可。但此时要注意处理 `b[i]` 与 `a[i]` 的正负号关系（e.g. $\dfrac{1}{1} = \dfrac{-1}{-1}$ ，但在直接按此存储则会导致被认作为不同的值）。也可用 `long double` 维护$d$ 。之后用 `map` 统计出现次数最多的 `d` 即可。
 
-注意特判 $a[i] = 0$ 的情况。此时有 $c[i] = b[i]$ ，若 $b[i] = 0$ ，则 $c[i]$ 必为 $0$。
+注意特判 $a[i] = 0$的情况。此时有 $c[i] = b[i]$，若 $b[i] = 0$ ，则$c[i]$ 必为$0$。
 
 ### 代码
 

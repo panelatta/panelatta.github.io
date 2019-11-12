@@ -2,9 +2,9 @@
 layout: post
 cid: 186
 title: 在word中借助mathjax插入latex公式
-slug: 186
-date: 2019/06/23 15:57:00
-updated: 2019/08/16 15:48:11
+
+date: 2019-06-23 15:57:00
+updated: 2019-08-16 15:48:11
 status: publish
 author: Panelatta
 categories: 
@@ -27,4 +27,4 @@ viewsNum: 86
 之后将生成的mathml code粘贴到word中即可，注意word对复杂mathml的支持不是很好
 
 
-  [1]: https://bofc.tech/usr/uploads/2019/06/1170695061.png
+  [1]: https://bofc.tech/usr/uploads/2019-06-1170695061.png

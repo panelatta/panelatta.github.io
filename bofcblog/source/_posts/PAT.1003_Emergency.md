@@ -2,13 +2,13 @@
 layout: post
 cid: 16
 title: PAT.1003 Emergency
-slug: 16
-date: 2018/06/06 17:54:00
-updated: 2019/08/16 16:00:26
+
+date: 2018-06-06 17:54:00
+updated: 2019-08-16 16:00:26
 status: publish
 author: Panelatta
 categories: 
-  - Graph --- Shortest Path
+  - "Graph --- Shortest Path"
 tags: 
   - ACM题解
 thumb: 

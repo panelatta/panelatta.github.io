@@ -2,9 +2,9 @@
 layout: post
 cid: 245
 title: Differences Towards the Four Constrained Optimization Methods
-slug: 245
-date: 2019/09/17 19:26:00
-updated: 2019/09/17 19:34:10
+
+date: 2019-09-17 19:26:00
+updated: 2019-09-17 19:34:10
 status: publish
 author: Panelatta
 categories: 
@@ -34,23 +34,23 @@ Here is a comprehensive explaination towards these four methods written by [Bria
 > $$
 > {\bf g}({\bf x})=0
 > $$
-> where we can assume for simplicity that $f$ and $g$ are smooth (at least twice continously differentiable.)
+> where we can assume for simplicity that $f$and$g$ are smooth (at least twice continously differentiable.)
 >
 > The Lagrangian function is
 > $$
 > L({\bf x},\boldsymbol{\lambda})=f({\bf x})+\boldsymbol{\lambda}^\top {\bf g}({\bf x})
 > $$
-> Note that $L$ is a function of ${\bf x}$ and $\boldsymbol{\lambda}$. The first order necessary condition for a point ${\bf x}^*$ to be a minimizer is that there is a $\boldsymbol{\lambda}^*$ such that $({\bf x}^*,\boldsymbol{\lambda}^*)$ is a stationary point of $L$. In the method of multipliers, we try to solve the nonlinear system of equations
+> Note that $L$is a function of ${\bf x}$and $\boldsymbol{\lambda}$. The first order necessary condition for a point ${\bf x}^*$to be a minimizer is that there is a$\boldsymbol{\lambda}^*$ such that$({\bf x}^*,\boldsymbol{\lambda}^*)$ is a stationary point of$L$. In the method of multipliers, we try to solve the nonlinear system of equations
 > $$
-> \nabla_{{\bf x}}L={\bf 0} \\\nabla_{\boldsymbol{\lambda}}L={\bf 0}
+> \nabla_{\bf x}L={\bf 0} \\\nabla_{\boldsymbol{\lambda}}L={\bf 0}
 > $$
-> This is typically done by alternately minimizing with respect to $\bf x$ and updating $\boldsymbol{\lambda} $. Given a Lagrange multiplier estimate $\boldsymbol{\lambda}^{(k)}$, we minimize $L({\bf x},\boldsymbol{\lambda}^{(k)})$ to get ${\bf x}^{(k)}$. Then we update $\boldsymbol{\lambda} $ with
+> This is typically done by alternately minimizing with respect to $\bf x$and updating $\boldsymbol{\lambda} $. Given a Lagrange multiplier estimate $\boldsymbol{\lambda}^{(k)}$, we minimize $L({\bf x},\boldsymbol{\lambda}^{(k)})$to get ${\bf x}^{(k)}$. Then we update$\boldsymbol{\lambda}$ with
 > $$
 > \boldsymbol\lambda^{(k+1)}=\boldsymbol\lambda^{(k)}+\alpha_k {\bf g}({\bf x}^k)
 > $$
 > Where $\alpha_k$ is a step size parameter that can be set in various ways.
 >
-> An penalty function for our problem is a function that is $0$ if ${\bf g}({\bf x})={\bf 0}$ and greater than $\bf 0$ when ${\bf g}({\bf x}) \neq \bf 0$. A commonly used penalty function is the quadratic penalty function
+> An penalty function for our problem is a function that is $0$if ${\bf g}({\bf x})={\bf 0}$and greater than$\bf 0$ when${\bf g}({\bf x}) \neq \bf 0$. A commonly used penalty function is the quadratic penalty function
 > $$
 > \phi({\bf g}({\bf x}))={\bf g}^2 ({\bf x})
 > $$
@@ -58,7 +58,7 @@ Here is a comprehensive explaination towards these four methods written by [Bria
 > $$
 > {\rm min}\, f({\bf x})+\boldsymbol\rho^\top\phi({\bf g}({\bf x}))
 > $$
-> where $\boldsymbol \rho$ is a penalty parameter that is increased until the solution of the penalized problem is close to satisfying ${\bf g}({\bf x})={\bf 0} $. Note that $\boldsymbol \rho $ is not a Lagrange multiplier in this case.
+> where $\boldsymbol \rho$is a penalty parameter that is increased until the solution of the penalized problem is close to satisfying ${\bf g}({\bf x})={\bf 0} $. Note that $\boldsymbol \rho$ is not a Lagrange multiplier in this case.
 >
 > For problems with inequality constraints a commonly used penalty function is
 > $$
@@ -68,7 +68,7 @@ Here is a comprehensive explaination towards these four methods written by [Bria
 > $$
 > \hat L({\bf x},\boldsymbol\lambda, \boldsymbol\rho)=f({\bf x})+\boldsymbol\lambda^\top{\bf g}({\bf x})+\boldsymbol\rho^\top\phi({\bf g}({\bf x}))
 > $$
-> Augmented Lagrangian methods minimize $\hat L$ with respect to $\bf x $, update the Lagrange multiplier estimate $\boldsymbol \lambda $ and then (if necessary) update the penalty parameter $\boldsymbol\rho $ in each iteration. In practice, augmented Lagrangian methods outperform simple penalty methods and the method of multipliers.
+> Augmented Lagrangian methods minimize $\hat L$with respect to $\bf x $, update the Lagrange multiplier estimate $\boldsymbol \lambda $and then (if necessary) update the penalty parameter$\boldsymbol\rho$ in each iteration. In practice, augmented Lagrangian methods outperform simple penalty methods and the method of multipliers.
 >
 > Merit functions are used in a variety of nonlinear programming algorithms. You'll most commonly see them used in sequential quadratic programming methods. In these methods, a search direction, ${\bf d}^{(k)}$, is computed at each iteration. The step is from ${\bf x}^{(k)} $to
 > $$

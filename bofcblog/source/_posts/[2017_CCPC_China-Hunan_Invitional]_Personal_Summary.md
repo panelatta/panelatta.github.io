@@ -1,10 +1,10 @@
 ---
 layout: post
 cid: 125
-title: [2017 CCPC China-Hunan Invitional] Personal Summary
-slug: 125
-date: 2018/09/07 22:32:00
-updated: 2019/08/16 15:54:18
+title: \[2017 CCPC China-Hunan Invitional\] Personal Summary
+
+date: 2018-09-07 22:32:00
+updated: 2019-08-16 15:54:18
 status: publish
 author: Panelatta
 categories: 

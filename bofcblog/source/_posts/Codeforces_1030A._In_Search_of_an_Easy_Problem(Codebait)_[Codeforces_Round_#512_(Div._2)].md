@@ -2,9 +2,9 @@
 layout: post
 cid: 145
 title: Codeforces 1030A. In Search of an Easy Problem(Codebait) [Codeforces Round #512 (Div. 2)]
-slug: 145
-date: 2018/09/24 22:22:00
-updated: 2019/08/16 15:49:36
+
+date: 2018-09-24 22:22:00
+updated: 2019-08-16 15:49:36
 status: publish
 author: Panelatta
 categories: 
@@ -31,7 +31,7 @@ If at least one of these $n$ people has answered that the problem is hard, the c
 
 The first line contains a single integer $n$ ($1 \le n \le 100$) — the number of people who were asked to give their opinions.
 
-The second line contains $n$ integers, each integer is either $0$ or $1$. If $i$-th integer is $0$, then $i$-th person thinks that the problem is easy; if it is $1$, then $i$-th person thinks that the problem is hard.
+The second line contains $n$integers, each integer is either $0$or $1$. If $i$-th integer is $0$, then $i$-th person thinks that the problem is easy; if it is$1$, then$i$-th person thinks that the problem is hard.
 
 ### Output
 

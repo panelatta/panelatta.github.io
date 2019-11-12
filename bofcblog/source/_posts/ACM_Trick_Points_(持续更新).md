@@ -2,9 +2,9 @@
 layout: post
 cid: 46
 title: ACM Trick Points (持续更新)
-slug: 46
-date: 2018/06/07 21:50:00
-updated: 2019/08/16 15:39:50
+
+date: 2018-06-07 21:50:00
+updated: 2019-08-16 15:39:50
 status: publish
 author: Panelatta
 categories: 
@@ -43,19 +43,19 @@ viewsNum: 710
 
 ### 余式定理
 
-对多项式$ P(x) $，有$ \frac{P(x)}{x-a} $之余式为$ P(a) $。
+对多项式$P(x) $，有$\frac{P(x)}{x-a}$之余式为$ P(a)$。
 
-更一般地，假设对于多项式除法$ \frac{P(x)}{M(x)}=Q(x)+R(x) $，其中商是$ Q(x) $，余式是$ R(x) $，若$ M(x) $是n次式$ (n \geq 1) $，则可将其$ n $个根列出联立方程
+更一般地，假设对于多项式除法$\frac{P(x)}{M(x)}=Q(x)+R(x) $，其中商是$Q(x) $，余式是$R(x) $，若$ M(x)$是n次式$ (n \geq 1)$，则可将其$ n$个根列出联立方程
 
-$$ \\P(a)=R(a) \\P(b)=R(b) \\P(c)=R(c) \\ \cdots $$
+$$\\P(a)=R(a) \\P(b)=R(b) \\P(c)=R(c) \\ \cdots$$
 
 #### 证明
 
-考虑$ \frac{P(x)}{x-a}=Q(x)+R(x) $。
+考虑$\frac{P(x)}{x-a}=Q(x)+R(x)$。
 
-由除法定理有$ P(x)=(x-a)Q(x)+R(x) $。且因为$ x-a $是1次式，故$ R(x) $为常数，记为$ r $。
+由除法定理有$P(x)=(x-a)Q(x)+R(x) $。且因为$x-a $是1次式，故$ R(x)$为常数，记为$ r$。
 
-此时代入$ x=a $，可得$ P(a)=r $。证毕。
+此时代入$x=a $，可得$ P(a)=r$。证毕。
 
 ## Attention Points
 

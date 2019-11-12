@@ -2,9 +2,9 @@
 layout: post
 cid: 141
 title: A. Magic Mirror(新手题，字符串处理) [2018 ACM-ICPC Jiaozuo Online Contest]
-slug: 141
-date: 2018/09/15 23:49:00
-updated: 2019/08/16 15:50:05
+
+date: 2018-09-15 23:49:00
+updated: 2019-08-16 15:50:05
 status: publish
 author: Panelatta
 categories: 
@@ -58,7 +58,7 @@ Dare you say that again?
 
 ### 题目大意
 
-给出 $T$ 个长度小于 $15$ 的字符串，判断其是否与字符串`Jessie`相等（忽略大小写）。
+给出 $T$个长度小于$15$ 的字符串，判断其是否与字符串`Jessie`相等（忽略大小写）。
 
 ### 分析
 

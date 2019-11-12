@@ -2,13 +2,13 @@
 layout: post
 cid: 124
 title: F. Sorting (排序，浮点数精度) [2017 CCPC China-Hunan Invitional]
-slug: 124
-date: 2018/09/07 22:10:00
-updated: 2019/08/16 15:54:41
+
+date: 2018-09-07 22:10:00
+updated: 2019-08-16 15:54:41
 status: publish
 author: Panelatta
 categories: 
-  - Basic --- Thoughts
+  - "Basic --- Thoughts"
 tags: 
   - ACM题解
 thumb: 
@@ -21,8 +21,8 @@ viewsNum: 200
 
 ## Description
 
-Bobo has $n$ tuples $(a_1, b_1, c_1), (a_2, b_2, c_2), \dots, (a_n, b_n, c_n)$ .
-He would like to find the lexicographically smallest permutation $ p_1, p_2, \dots, p_n$ of $1, 2, \dots, n$ such that for $i \in \{2, 3, \dots, n\}$ it holds that
+Bobo has $n$tuples$(a_1, b_1, c_1), (a_2, b_2, c_2), \dots, (a_n, b_n, c_n)$ .
+He would like to find the lexicographically smallest permutation $p_1, p_2, \dots, p_n$of$1, 2, \dots, n$ such that for$i \in \{2, 3, \dots, n\}$ it holds that
 $$
 \frac{a_{p_{i - 1}} + b_{p_{i - 1}}}{a_{p_{i - 1}} + b_{p_{i - 1}} + c_{p_{i - 1}}} \leq \frac{a_{p_i} + b_{p_i}}{a_{p_i} + b_{p_i} + c_{p_i}}
 $$
@@ -33,18 +33,18 @@ The input consists of several test cases and is terminated by end-of-file.
 
 The first line of each test case contains an integer $n$.
 
-The $i$-th of the following $n$ lines contains $3$ integers $a_i$, $b_i$ and $c_i$.  
+The $i$-th of the following $n$lines contains $3$integers $a_i$,$b_i$ and$c_i$.  
 
 ### Output
 
-For each test case, print $n$ integers $p_1, p_2, \dots, p_n$ seperated by spaces.
+For each test case, print $n$integers$p_1, p_2, \dots, p_n$ seperated by spaces.
 DO NOT print trailing spaces.
 
 #### Constraint
 
 - $1 \leq n \leq 10^3$
 - $1 \leq a_i, b_i, c_i \leq 2 \times 10^9$
-- The sum of $n$ does not exceed $10^4$.
+- The sum of $n$does not exceed$10^4$.
 
 ### Sample Input
 
@@ -73,11 +73,11 @@ DO NOT print trailing spaces.
 
 ### 题目大意
 
-给你 $n$ 个三元组，要求给出这 $n$ 个三元组的一个排列，使得对 $i \in \left \{ 2, 3, \cdots, n \right \} $ 都满足题给关系。
+给你 $n$个三元组，要求给出这 $n$个三元组的一个排列，使得对$i \in \left \{ 2, 3, \cdots, n \right \}$ 都满足题给关系。
 
 ### 分析
 
-题给关系中的不等式只涉及 $p_{i - 1}$ 和 $p_{i}$ 两个元素，实际上相当于对三元组重载了小于号。因此，本题实际上是对读入的三元组序列进行排序。因此，我们用一个Node结构体存储三元组的三个变元和读入时在原序列中的位置即可。
+题给关系中的不等式只涉及 $p_{i - 1}$和$p_{i}$ 两个元素，实际上相当于对三元组重载了小于号。因此，本题实际上是对读入的三元组序列进行排序。因此，我们用一个Node结构体存储三元组的三个变元和读入时在原序列中的位置即可。
 
 ```
 struct Node {

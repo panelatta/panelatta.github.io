@@ -1,10 +1,10 @@
 ---
 layout: post
 cid: 114
-title: A. An Olympian Math Problem (数论)【2018 ACM-ICPC Nanjing Online Contest】
-slug: 114
-date: 2018/09/03 19:28:00
-updated: 2019/08/16 15:56:10
+title: "A. An Olympian Math Problem (数论) [2018 ACM-ICPC Nanjing Online Contest]"
+
+date: 2018-09-03 19:28:00
+updated: 2019-08-16 15:56:10
 status: publish
 author: Panelatta
 categories: 
@@ -32,11 +32,11 @@ We denote $S$:
 $S = 1 \times 1! + 2 \times 2! + \cdots +$
 $(n - 1) \times (n-1)!$
 
-Then $S$ module $n$ is ____________
+Then $S$module$n$ is ____________
 
 You are given an integer $n$.
 
-You have to calculate $S$ modulo $n$.
+You have to calculate $S$modulo$n$.
 
 ### Input
 
@@ -48,13 +48,13 @@ It is guaranteed that $2 \le n\le 10^{18}$.
 
 ### Output
 
-For each test case, print an integer $S$ modulo $n$.
+For each test case, print an integer $S$modulo$n$.
 
 ### Hint
 
-The first test is: $S = 1\times 1!= 1$, and $1$ modulo $2$ is $1$.
+The first test is: $S = 1\times 1!= 1$, and $1$modulo $2$ is$1$.
 
-The second test is: $S = 1\times 1!+2 \times 2!= 5$ , and $5$ modulo $3$ is $2$.
+The second test is: $S = 1\times 1!+2 \times 2!= 5$, and $5$modulo$3$ is$2$.
 
 ### Sample Input
 

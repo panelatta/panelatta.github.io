@@ -1,10 +1,10 @@
 ---
 layout: post_draft
 cid: 134
-title: [2018 ACM-ICPC Xuzh Online Contest] Personal Summary
-slug: 134
-date: 2018/09/09 17:11:20
-updated: 2018/09/09 17:11:20
+title: \[2018 ACM-ICPC Xuzh Online Contest\] Personal Summary
+
+date: 2018-09-09 17:11:20
+updated: 2018-09-09 17:11:20
 status: publish
 author: Panelatta
 categories: 
