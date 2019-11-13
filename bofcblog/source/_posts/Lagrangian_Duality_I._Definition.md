@@ -146,8 +146,3 @@ $$
 ${\bf C{\scriptsize OROLLARY}\;\;1}.$若 $p^*$与 $d^*$ 均存在且有$p^* = d^*$，则 Primal Problem 和 Dual Problem 的可行解$({\bf x}^*, \boldsymbol{\alpha}^*, \boldsymbol{\beta}^*)$ 分别也是对应问题的最优解。
 
 因此，一旦 $p^* = d^*$成立，则可以经由计算 Dual Problem 来获得 Primal Problem 的解；称$p^* = d^*$ 为 Strong Duality。
-
-$$
-\newcommand{\bm}[1]{\boldsymbol{ #1}}
-\newcommand{\bold}[1]{\mathbf{ #1}}
-$$
