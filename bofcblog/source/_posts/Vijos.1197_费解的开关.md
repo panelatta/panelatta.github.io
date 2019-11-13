@@ -2,7 +2,7 @@
 layout: post
 cid: 89
 title: Vijos.1197 费解的开关
-
+mathjax: true
 date: 2018-06-14 00:08:00
 updated: 2019-08-16 16:00:11
 status: publish

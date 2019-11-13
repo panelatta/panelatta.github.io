@@ -2,7 +2,7 @@
 layout: post
 cid: 150
 title: Codeforces 1133D. Zero Quantity Maximization (map, 精度)
-
+mathjax: true
 date: 2019-03-10 14:41:00
 updated: 2019-08-16 15:49:26
 status: publish

@@ -2,7 +2,7 @@
 layout: post
 cid: 140
 title: \[2018 ACM-ICPC Jiaozuo Online Contest\] Personal Summary
-
+mathjax: true
 date: 2018-09-15 23:45:00
 updated: 2019-08-16 15:50:38
 status: publish

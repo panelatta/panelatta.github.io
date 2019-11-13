@@ -2,7 +2,7 @@
 layout: post
 cid: 125
 title: \[2017 CCPC China-Hunan Invitional\] Personal Summary
-
+mathjax: true
 date: 2018-09-07 22:32:00
 updated: 2019-08-16 15:54:18
 status: publish

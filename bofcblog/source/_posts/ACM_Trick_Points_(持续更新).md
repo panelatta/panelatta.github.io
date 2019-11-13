@@ -2,7 +2,7 @@
 layout: post
 cid: 46
 title: ACM Trick Points (持续更新)
-
+mathjax: true
 date: 2018-06-07 21:50:00
 updated: 2019-08-16 15:39:50
 status: publish

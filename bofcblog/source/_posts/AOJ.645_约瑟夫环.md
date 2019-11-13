@@ -2,7 +2,7 @@
 layout: post
 cid: 26
 title: AOJ.645 约瑟夫环
-
+mathjax: true
 date: 2017-11-21 22:32:00
 updated: 2018-06-10 20:33:15
 status: publish

@@ -2,7 +2,7 @@
 layout: post
 cid: 16
 title: PAT.1003 Emergency
-
+mathjax: true
 date: 2018-06-06 17:54:00
 updated: 2019-08-16 16:00:26
 status: publish

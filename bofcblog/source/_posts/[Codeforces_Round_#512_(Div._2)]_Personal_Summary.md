@@ -2,7 +2,7 @@
 layout: post
 cid: 142
 title: \[Codeforces Round #512 (Div. 2)\] Personal Summary
-
+mathjax: true
 date: 2018-09-24 21:55:00
 updated: 2019-08-16 15:49:51
 status: publish

@@ -2,7 +2,7 @@
 layout: post
 cid: 177
 title: Notes For Discrete-Time System Analysis [Chapter I. Fundamental Concepts]
-
+mathjax: true
 date: 2019-06-20 21:46:00
 updated: 2019-08-27 17:23:38
 status: publish
@@ -40,7 +40,7 @@ u[n] = \left\{\begin{matrix} 1,n=0,1,2, \cdots \\
 \end{matrix}\right.
 $$
 
-![](https://i.loli.net/2019-06-20/5d0b38b90175771534.png)
+![](http://i.loli.net/2019/06/20/5d0b38b90175771534.png)
 
 ##### *Discrete-Time Unit-Ramp Function*
 
@@ -48,7 +48,7 @@ $$
 r[n]=nu[n]=\left\{\begin{matrix} n, n=0,1,2,\cdots \\ 0,n=-1,-2,-3,\cdots \end{matrix}\right.
 $$
 
-![](https://i.loli.net/2019-06-20/5d0b38e8e40a147543.png)
+![](http://i.loli.net/2019/06/20/5d0b38e8e40a147543.png)
 
 ##### *Unit Pulse*
 
@@ -56,7 +56,7 @@ $$
 \delta[n] = \left\{\begin{matrix} 1,n=0 \\ 0,n \neq 0 \end{matrix}\right.
 $$
 
-![](https://i.loli.net/2019-06-20/5d0b39103259212957.png)
+![](http://i.loli.net/2019/06/20/5d0b39103259212957.png)
 
 ##### *Periodic Discrete-Time Signals* 	
 
@@ -84,7 +84,7 @@ $$
 
 where $L$ is a **positive odd integer**. 
 
-![](https://i.loli.net/2019-06-20/5d0b46dd9fea199029.png)
+![](http://i.loli.net/2019/06/20/5d0b46dd9fea199029.png)
 
 ##### *Digital Signals*
 
@@ -101,7 +101,7 @@ Giving a discrete-time signal $x[n]$and a positive integer$q$ , then
 - $x[n-q]$is the $q$-step right shifts of$x[n]$
 - $x[n + q]$is the $q$-step left shifts of$x[n]$
 
-![](https://i.loli.net/2019-06-20/5d0b4eceaf51646810.png)
+![](http://i.loli.net/2019/06/20/5d0b4eceaf51646810.png)
 
 ##### *Discrete-Time Signals defined Interval by Interval*
 

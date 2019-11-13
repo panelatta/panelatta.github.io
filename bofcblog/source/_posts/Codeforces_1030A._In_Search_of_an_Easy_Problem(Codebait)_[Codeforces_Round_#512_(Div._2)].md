@@ -2,7 +2,7 @@
 layout: post
 cid: 145
 title: Codeforces 1030A. In Search of an Easy Problem(Codebait) [Codeforces Round #512 (Div. 2)]
-
+mathjax: true
 date: 2018-09-24 22:22:00
 updated: 2019-08-16 15:49:36
 status: publish

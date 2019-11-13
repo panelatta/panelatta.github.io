@@ -2,7 +2,7 @@
 layout: post
 cid: 114
 title: "A. An Olympian Math Problem (数论) [2018 ACM-ICPC Nanjing Online Contest]"
-
+mathjax: true
 date: 2018-09-03 19:28:00
 updated: 2019-08-16 15:56:10
 status: publish

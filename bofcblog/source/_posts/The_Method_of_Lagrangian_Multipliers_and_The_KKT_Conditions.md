@@ -2,7 +2,7 @@
 layout: post
 cid: 212
 title: The Method of Lagrangian Multipliers and The KKT Conditions
-
+mathjax: true
 date: 2019-08-21 20:31:00
 updated: 2019-08-21 20:34:47
 status: publish

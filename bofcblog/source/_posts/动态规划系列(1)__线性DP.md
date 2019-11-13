@@ -2,7 +2,7 @@
 layout: post
 cid: 93
 title: "动态规划系列(1): 线性DP"
-
+mathjax: true
 date: 2018-06-20 15:46:00
 updated: 2019-08-16 15:59:53
 status: publish

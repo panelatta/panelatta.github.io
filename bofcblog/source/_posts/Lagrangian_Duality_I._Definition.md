@@ -2,7 +2,7 @@
 layout: post_draft
 cid: 255
 title: Lagrangian Duality I. Definition
-
+mathjax: true
 date: 2019-10-28 20:48:00
 updated: 2019-10-28 21:29:14
 status: publish
@@ -148,6 +148,6 @@ ${\bf C{\scriptsize OROLLARY}\;\;1}.$若 $p^*$与 $d^*$ 均存在且有$p^* = d^
 因此，一旦 $p^* = d^*$成立，则可以经由计算 Dual Problem 来获得 Primal Problem 的解；称$p^* = d^*$ 为 Strong Duality。
 
 $$
-\newcommand{\bm}[1]{\boldsymbol{#1}}
-\newcommand{\bold}[1]{\mathbf{#1}}
+\newcommand{\bm}[1]{\boldsymbol{ #1}}
+\newcommand{\bold}[1]{\mathbf{ #1}}
 $$

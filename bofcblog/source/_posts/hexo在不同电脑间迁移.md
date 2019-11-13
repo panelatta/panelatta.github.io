@@ -2,7 +2,7 @@
 layout: post
 cid: 64
 title: hexo在不同电脑间迁移
-
+mathjax: true
 date: 2018-05-21 19:17:00
 updated: 2018-06-10 20:24:28
 status: publish

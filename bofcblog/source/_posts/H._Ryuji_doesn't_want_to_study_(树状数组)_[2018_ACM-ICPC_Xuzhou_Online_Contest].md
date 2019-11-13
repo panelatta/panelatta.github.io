@@ -2,7 +2,7 @@
 layout: post
 cid: 137
 title: H. Ryuji doesn't want to study (树状数组) [2018 ACM-ICPC Xuzhou Online Contest]
-
+mathjax: true
 date: 2018-09-09 21:10:00
 updated: 2019-08-16 15:50:50
 status: publish

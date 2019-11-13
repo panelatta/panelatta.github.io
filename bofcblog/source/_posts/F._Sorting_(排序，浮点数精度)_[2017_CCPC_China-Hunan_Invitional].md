@@ -2,7 +2,7 @@
 layout: post
 cid: 124
 title: F. Sorting (排序，浮点数精度) [2017 CCPC China-Hunan Invitional]
-
+mathjax: true
 date: 2018-09-07 22:10:00
 updated: 2019-08-16 15:54:41
 status: publish
