@@ -17,7 +17,7 @@ tags:
 
 当前前沿的 tracker 大多基于 template matching 方法，但大多 tracker 在同一时间只使用目标的单张 template，其 updating 过程始终基于当前目标仍与原始 template 有较高相似度的假设，因而在目标发生较大形态变化时便会丢失目标，如图所示：
 
-![1571494440051.png](http://i.loli.net/2019/11/02/djzMgP1lQBDbGfn.png)
+![1571494440051.png](http://https://i.loli.net/2019/11/02/djzMgP1lQBDbGfn.png)
 
 <!--more-->
 
@@ -30,7 +30,7 @@ tags:
 
 ## 解决思路
 
-![1571495463047.png](http://i.loli.net/2019/11/02/Lzq72AOjGx59fIC.png)
+![1571495463047.png](http://https://i.loli.net/2019/11/02/Lzq72AOjGx59fIC.png)
 
 为了获得关于目标动态变化的较好表达，作者提出了一种基于 STM(short-term module) 和 LTM(long-term module) 构成的 multi-template 框架，如上图所示。其中，STM 和 LTM 分别用于描述模板的短期更新和目标在较长一段时间内的外观变化。
 
@@ -63,7 +63,7 @@ $$
 
 ## 实验
 
-![1571499052017.png](http://i.loli.net/2019/11/02/9MnS5DqUPyxs21g.png)
+![1571499052017.png](http://https://i.loli.net/2019/11/02/9MnS5DqUPyxs21g.png)
 
 可以看到应用 THOR 方法后，跟踪器的 robustness 提升显著，但在 VOT 和 OTB 数据集中 accuracy 的表现差异较大，OTB 的情况下有不错提升但 VOT 中没什么效果，推测是因为加入颜色特征后目标发生剧烈变化时与 origin template 差别太大导致 LTM 大部分情况下没起作用，大部分时候仍使用 STM 特征，而 OTB 的灰度特征因为只主要与目标的外形变化有关因而 LTM 特征可以顺利得以应用。此外，THOR 的这个情况和 CSR-DCF 的情况刚好相反，比较有意思。
 
