@@ -1,7 +1,7 @@
 ---
 layout: post
 cid: 153
-title: \[Comet OJ Contest #0\]A. 解方程 (暴力)
+title: "A. 解方程 (暴力) [Comet OJ Contest #0]"
 mathjax: true
 date: 2019-04-06 16:31:00
 updated: 2019-08-16 15:48:53
