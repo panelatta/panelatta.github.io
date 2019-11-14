@@ -1,19 +1,20 @@
 ---
 layout: post
 cid: 153
-title: "A. 解方程 (暴力) [Comet OJ Contest #0]"
+title: 'A. 解方程 (暴力) [Comet OJ Contest #0]'
 mathjax: true
-date: 2019-04-06 16:31:00
-updated: 2019-08-16 15:48:53
 status: publish
 author: Panelatta
-categories: 
-tags: 
+tags:
   - ACM题解
-thumb: 
-thumbSmall: 
 thumbStyle: small
 viewsNum: 376
+abbrlink: fc4a99cd
+date: 2019-04-06 16:31:00
+updated: 2019-08-16 15:48:53
+categories:
+thumb:
+thumbSmall:
 ---
 
 

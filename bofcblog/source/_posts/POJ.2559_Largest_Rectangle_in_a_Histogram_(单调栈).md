@@ -3,16 +3,17 @@ layout: post
 cid: 120
 title: POJ.2559 Largest Rectangle in a Histogram (单调栈)
 mathjax: true
-date: 2018-09-04 22:36:00
-updated: 2019-08-16 15:54:57
 status: publish
 author: Panelatta
-categories: 
-tags: 
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 224
+abbrlink: 7151ccce
+date: 2018-09-04 22:36:00
+updated: 2019-08-16 15:54:57
+categories:
+thumb:
 ---
 
 

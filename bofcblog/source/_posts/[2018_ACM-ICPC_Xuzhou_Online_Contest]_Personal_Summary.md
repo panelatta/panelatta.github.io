@@ -1,18 +1,19 @@
 ---
 layout: post
 cid: 135
-title: "2018 ACM-ICPC Xuzhou Online Contest [Personal Summary]"
+title: '2018 ACM-ICPC Xuzhou Online Contest [Personal Summary]'
 mathjax: true
-date: 2018-09-09 17:11:00
-updated: 2019-08-16 15:51:02
 status: publish
 author: Panelatta
-categories: 
+categories:
   - ACM
-tags: 
-thumb: 
 thumbStyle: large
 viewsNum: 239
+abbrlink: f85793a7
+date: 2018-09-09 17:11:00
+updated: 2019-08-16 15:51:02
+tags:
+thumb:
 ---
 
 

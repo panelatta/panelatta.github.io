@@ -1,17 +1,18 @@
 ---
 layout: post
 cid: 129
-title: "2018 ACM-ICPC Shenyang Online Contest [Personal Summary]"
+title: '2018 ACM-ICPC Shenyang Online Contest [Personal Summary]'
 mathjax: true
-date: 2018-09-08 21:11:00
-updated: 2019-08-16 15:51:20
 status: publish
 author: Panelatta
-categories: 
-tags: 
-thumb: 
 thumbStyle: large
 viewsNum: 219
+abbrlink: 9fe7f016
+date: 2018-09-08 21:11:00
+updated: 2019-08-16 15:51:20
+categories:
+tags:
+thumb:
 ---
 
 

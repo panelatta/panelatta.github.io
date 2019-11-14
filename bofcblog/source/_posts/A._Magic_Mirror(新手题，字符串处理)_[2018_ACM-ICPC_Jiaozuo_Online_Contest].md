@@ -1,19 +1,20 @@
 ---
 layout: post
 cid: 141
-title: A. Magic Mirror(新手题，字符串处理) [2018 ACM-ICPC Jiaozuo Online Contest]
+title: 'A. Magic Mirror(新手题，字符串处理) [2018 ACM-ICPC Jiaozuo Online Contest]'
 mathjax: true
-date: 2018-09-15 23:49:00
-updated: 2019-08-16 15:50:05
 status: publish
 author: Panelatta
-categories: 
+categories:
   - ACM
-tags: 
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 393
+abbrlink: 55793cd0
+date: 2018-09-15 23:49:00
+updated: 2019-08-16 15:50:05
+thumb:
 ---
 
 

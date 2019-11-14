@@ -3,13 +3,14 @@ layout: post
 cid: 256
 title: Tracking Holistic Object Representations 论文笔记
 mathjax: true
-date: 2019-11-02 22:25:00
-updated: 2019-11-02 22:37:39
 status: publish
 author: Panelatta
-categories: 
+categories:
   - Visual Tracking
-tags: 
+abbrlink: e69063da
+date: 2019-11-02 22:25:00
+updated: 2019-11-02 22:37:39
+tags:
 ---
 
 

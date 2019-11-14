@@ -1,19 +1,20 @@
 ---
 layout: post
 cid: 145
-title: Codeforces 1030A. In Search of an Easy Problem(Codebait) [Codeforces Round #512 (Div. 2)]
+title: 'Codeforces 1030A. In Search of an Easy Problem(Codebait) [Codeforces Round'
 mathjax: true
-date: 2018-09-24 22:22:00
-updated: 2019-08-16 15:49:36
 status: publish
 author: Panelatta
-categories: 
+categories:
   - ACM
-tags: 
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 611
+abbrlink: edd59fa4
+date: 2018-09-24 22:22:00
+updated: 2019-08-16 15:49:36
+thumb:
 ---
 
 

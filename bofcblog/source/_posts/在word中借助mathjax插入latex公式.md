@@ -3,14 +3,15 @@ layout: post
 cid: 186
 title: 在word中借助mathjax插入latex公式
 mathjax: true
-date: 2019-06-23 15:57:00
-updated: 2019-08-16 15:48:11
 status: publish
 author: Panelatta
-categories: 
+categories:
   - Essay
-tags: 
 viewsNum: 86
+abbrlink: e3952532
+date: 2019-06-23 15:57:00
+updated: 2019-08-16 15:48:11
+tags:
 ---
 
 

@@ -3,17 +3,18 @@ layout: post
 cid: 28
 title: HDU.2025 查找最大元素
 mathjax: true
-date: 2017-12-19 22:34:00
-updated: 2018-06-10 20:33:06
 status: publish
 author: Panelatta
-categories: 
-  - "Basic --- Thoughts"
-tags: 
+categories:
+  - Basic --- Thoughts
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 233
+abbrlink: 827a6120
+date: 2017-12-19 22:34:00
+updated: 2018-06-10 20:33:06
+thumb:
 ---
 
 

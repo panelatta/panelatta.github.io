@@ -3,17 +3,18 @@ layout: post
 cid: 99
 title: A.队列Q - WannyFly挑战赛19
 mathjax: true
-date: 2018-07-07 01:14:00
-updated: 2019-08-16 15:57:07
 status: publish
 author: Panelatta
-categories: 
-  - "Basic --- Thoughts"
-tags: 
+categories:
+  - Basic --- Thoughts
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 152
+abbrlink: a8d29cc5
+date: 2018-07-07 01:14:00
+updated: 2019-08-16 15:57:07
+thumb:
 ---
 
 

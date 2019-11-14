@@ -3,17 +3,18 @@ layout: post
 cid: 16
 title: PAT.1003 Emergency
 mathjax: true
-date: 2018-06-06 17:54:00
-updated: 2019-08-16 16:00:26
 status: publish
 author: Panelatta
-categories: 
-  - "Graph --- Shortest Path"
-tags: 
+categories:
+  - Graph --- Shortest Path
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 244
+abbrlink: c97238be
+date: 2018-06-06 17:54:00
+updated: 2019-08-16 16:00:26
+thumb:
 ---
 
 

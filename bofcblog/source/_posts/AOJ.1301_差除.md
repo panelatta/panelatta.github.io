@@ -3,17 +3,18 @@ layout: post
 cid: 61
 title: AOJ.1301 差除
 mathjax: true
-date: 2018-03-24 19:15:00
-updated: 2018-06-10 20:30:05
 status: publish
 author: Panelatta
-categories: 
-  - "Basic --- Thoughts"
-tags: 
+categories:
+  - Basic --- Thoughts
+tags:
   - ACM题解
-thumb: 
 thumbStyle: small
 viewsNum: 175
+abbrlink: 993695da
+date: 2018-03-24 19:15:00
+updated: 2018-06-10 20:30:05
+thumb:
 ---
 
 

@@ -1,19 +1,20 @@
 ---
 layout: post
 cid: 140
-title: "2018 ACM-ICPC Jiaozuo Online Contest [Personal Summary]"
+title: '2018 ACM-ICPC Jiaozuo Online Contest [Personal Summary]'
 mathjax: true
-date: 2018-09-15 23:45:00
-updated: 2019-08-16 15:50:38
 status: publish
 author: Panelatta
-categories: 
+categories:
   - ACM
-tags: 
+tags:
   - ACM报告
-thumb: 
 thumbStyle: large
 viewsNum: 402
+abbrlink: 9fe28094
+date: 2018-09-15 23:45:00
+updated: 2019-08-16 15:50:38
+thumb:
 ---
 
 

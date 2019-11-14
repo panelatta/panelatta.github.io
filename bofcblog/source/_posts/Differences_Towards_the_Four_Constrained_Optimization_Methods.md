@@ -3,13 +3,14 @@ layout: post
 cid: 245
 title: Differences Towards the Four Constrained Optimization Methods
 mathjax: true
-date: 2019-09-17 19:26:00
-updated: 2019-09-17 19:34:10
 status: publish
 author: Panelatta
-categories: 
+categories:
   - Convex Optimization
-tags: 
+abbrlink: dbc0aa41
+date: 2019-09-17 19:26:00
+updated: 2019-09-17 19:34:10
+tags:
 ---
 
 

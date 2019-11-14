@@ -3,18 +3,19 @@ layout: post
 cid: 46
 title: ACM Trick Points (持续更新)
 mathjax: true
-date: 2018-06-07 21:50:00
-updated: 2019-08-16 15:39:50
 status: publish
 author: Panelatta
-categories: 
+categories:
   - ACM
-tags: 
+tags:
   - ACM解题总结
-thumb: 
-thumbSmall: 
 thumbStyle: large
 viewsNum: 710
+abbrlink: e178b7d3
+date: 2018-06-07 21:50:00
+updated: 2019-08-16 15:39:50
+thumb:
+thumbSmall:
 ---
 
 

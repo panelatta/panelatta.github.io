@@ -1,16 +1,17 @@
 ---
 layout: post
 cid: 177
-title: Notes For Discrete-Time System Analysis [Chapter I. Fundamental Concepts]
+title: 'Notes For Discrete-Time System Analysis [Chapter I. Fundamental Concepts]'
 mathjax: true
-date: 2019-06-20 21:46:00
-updated: 2019-08-27 17:23:38
 status: publish
 author: Panelatta
-categories: 
+categories:
   - Discrete-time System
-tags: 
 viewsNum: 82
+abbrlink: fc9c1a9f
+date: 2019-06-20 21:46:00
+updated: 2019-08-27 17:23:38
+tags:
 ---
 
 
