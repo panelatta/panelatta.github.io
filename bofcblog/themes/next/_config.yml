@@ -98,7 +98,7 @@ footer:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: true
+  sidebar: false
   post: true
   language:
 
@@ -132,11 +132,12 @@ menu:
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
+  friends: /exchange-links/ || address-book
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -169,11 +170,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: https://cdn.bofc.tech/hexo/67128421_p0.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -183,11 +184,11 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/panelatta || github
+  E-Mail: mailto:p.a.n.el.att.a39+dotdotahuh@googlemail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
+  Twitter: https://twitter.com/panelatta || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -204,11 +205,18 @@ social_icons:
 links_settings:
   icon: link
   title: Links
-  # Available values: block | inline
+  #Available values: block | inline
   layout: block
 
 links:
-  #Title: http://example.com
+  #忆海时沙: http://zzqsbk.top/
+  #Passacaglia: http://www.cnblogs.com/pornhub
+  #Ylink's Nest: http://ylinknest.top/
+  #Reflect0: https://me.csdn.net/qq_40038776
+  #Chillstepp: https://blog.csdn.net/qq_43553133
+  #Feynman1999: https://blog.csdn.net/feynman1999
+  #ShawnLuo: https://www.shawnluo.com/
+  #Yuchen's Bed: https://ihyc.top/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -380,7 +388,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -397,8 +405,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/panelatta
   title: Follow me on GitHub
 
 
