@@ -1,15 +1,12 @@
 ---
-layout: post_draft
-cid: 255
 title: Lagrangian Duality I. Definition
 mathjax: true
+categories:
+  - Convex Optimization
+abbrlink: e94c7cb4
 date: 2019-10-28 20:48:00
 updated: 2019-10-28 21:29:14
-status: publish
-author: Panelatta
-categories: 
-  - Convex Optimization
-tags: 
+tags:
 ---
 
 
