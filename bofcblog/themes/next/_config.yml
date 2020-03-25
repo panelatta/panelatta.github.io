@@ -427,7 +427,7 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
-  host: https://cdn.bofc.tech/hexo/fonts
+  host: https://fonts.loli.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
