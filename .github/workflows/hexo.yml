@@ -4,6 +4,9 @@ on: # 监视 `hexo`分支
   push:
       branches:
       - hexo
+      
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   build:
