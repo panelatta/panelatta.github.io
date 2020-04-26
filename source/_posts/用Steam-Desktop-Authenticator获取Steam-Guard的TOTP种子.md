@@ -9,6 +9,8 @@ categories:
 
 **注意：这个方法会重新绑定 Steam Guard 设备，会使得已有设备上开启的 Steam Guard 失效，如果你仍想保留已有设备上的 Steam Guard ，请勿使用该方法。**
 
+<!--more-->
+
 ## 安装 Steam Desktop Authenticator
 
 从官方的 Github 仓库下载最新的 [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator/releases)，并按照官方教程配置，但注意在这一步不要输入 encryption key，否则存储 TOTP 信息的文件会被加密：
