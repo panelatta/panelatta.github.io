@@ -9,6 +9,8 @@ categories:
 
 专门开篇文章记录一下学习 Django 过程中遇到的各种问题。
 
+<!--more-->
+
 ## 环境配置问题
 
 ### AttributeError: module 'django.conf.global_settings' has no attribute 'TEMPLATE_CONTEXT_PROCESSORS'
