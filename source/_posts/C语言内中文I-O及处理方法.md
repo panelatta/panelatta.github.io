@@ -1,12 +1,14 @@
 ---
 title: C语言内中文I/O及处理方法
-date: 2020-06-07 20:43:47
 tags:
   - 中文处理
   - 编码
 categories:
   - Programming Languages
   - C
+abbrlink: 52a5c671
+date: 2020-06-07 20:43:47
+toc: true
 ---
 
 C语言内处理不同的字符编码一直是个重要问题，正好今天遇到了需要处理读取/输出中文的问题，把研究结果在这里记录一下。

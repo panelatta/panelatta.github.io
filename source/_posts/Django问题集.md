@@ -1,10 +1,11 @@
 ---
 title: Django问题集
-date: 2020-04-30 20:10:37
 tags: Django
 categories:
   - Back End
   - Django
+abbrlink: 55fadbb7
+date: 2020-04-30 20:10:37
 ---
 
 专门开篇文章记录一下学习 Django 过程中遇到的各种问题。

@@ -1,8 +1,10 @@
 ---
 title: 用Steam Desktop Authenticator获取Steam Guard的TOTP种子
-date: 2020-04-26 16:38:54
 categories:
   - Security
+abbrlink: d3e40f17
+date: 2020-04-26 16:38:54
+toc: true
 ---
 
 `KeeTrayTOTP` 这个 KeePass 插件支持生成 Steam Guard 的安全验证码，但是 Steam 出于安全原因并没有提供导出 TOTP 种子的选项；网上现有的方法需要用到已 root 的安卓机，这里提供一种方法，可以在 PC 上直接获取 TOTP 种子，继而导入进 KeePass 里。
@@ -40,7 +42,7 @@ categories:
 
 之后在同一目录下创建两个 Python 脚本 `pkcs7.py` 和 `stm.py`，内容分别为：
 
-##### `pkcs7.py` 
+### `pkcs7.py` 
 
 ```python
 #!/usr/bin/env python
@@ -110,7 +112,7 @@ class PKCS7Encoder(object):
         return text + binascii.unhexlify(output.getvalue())
 ```
 
-##### `stm.py`
+### `stm.py`
 
 此处需要手动填入四个值：
 
