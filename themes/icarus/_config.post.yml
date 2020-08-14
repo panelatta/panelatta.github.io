@@ -1,0 +1,98 @@
+widgets:
+    # Table of contents widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: toc
+    # Profile widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: profile
+        # Author name
+        author: Panelatta
+        # Author title
+        author_title: Major in Visual Tracking / Interested in TCS & Math
+        # Author's current location
+        location: Hefei, China
+        # URL or path to the avatar image
+        avatar: https://cdn.jsdelivr.net/gh/panelatta/static-resources/avatar.jpg
+        # Whether show the rounded avatar image
+        avatar_rounded: true
+        # Email address for the Gravatar
+        gravatar: 
+        # URL or path for the follow button
+        follow_link: 'https://github.com/panelatta'
+        # Links to be shown on the bottom of the profile widget
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/panelatta'
+            #Facebook:
+                #icon: fab fa-facebook
+                #url: 'https://facebook.com'
+            Twitter:
+                icon: fab fa-twitter
+                url: 'https://twitter.com/panelatta'
+            Mail:
+                icon: far fa-envelope
+                url: 'mailto:p.a.n.el.att.a39+dotdotahuh@googlemail.com'
+            #Dribbble:
+                #icon: fab fa-dribbble
+                #url: 'https://dribbble.com'
+            #RSS:
+                #icon: fas fa-rss
+                #url: /
+    # # Recommendation links widget configurations
+    # -
+        # # Where should the widget be placed, left sidebar or right sidebar
+        # position: left
+        # type: links
+        # # Names and URLs of the sites
+        # links:
+            # 忆海时沙: 'http://zzqsbk.top/'
+            # Passacaglia: 'http://www.cnblogs.com/pornhub'
+            # ylink`s Nest: 'http://ylinknest.top/'
+            # Reflect0: 'https://blog.csdn.net/qq_40038776'
+            # Chillstepp: 'https://chillstepp.github.io'
+            # Feynman1999: 'https://blog.csdn.net/feynman1999'
+            # ShawnLuo: 'https://www.shawnluo.com/'
+            # Yuchen`s Bed: 'https://ihyc.top/'
+    # Categories widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: categories
+    # # Recent posts widget configurations
+    # -
+        # # Where should the widget be placed, left sidebar or right sidebar
+        # position: left
+        # type: recent_posts
+    # # Archives widget configurations
+    # -
+        # # Where should the widget be placed, left sidebar or right sidebar
+        # position: left
+        # type: archives
+    # Tags widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: tags
+    # # Google FeedBurner email subscription widget configurations
+    # -
+        # # Where should the widget be placed, left sidebar or right sidebar
+        # position: left
+        # type: subscribe_email
+        # # Hint text under the email input
+        # description: 
+        # # Feedburner ID
+        # feedburner_id: ''
+    # # Google AdSense unit configurations
+    # -
+        # # Where should the widget be placed, left sidebar or right sidebar
+        # position: left
+        # type: adsense
+        # # AdSense client ID
+        # client_id: ''
+        # # AdSense AD unit ID
+        # slot_id: ''
