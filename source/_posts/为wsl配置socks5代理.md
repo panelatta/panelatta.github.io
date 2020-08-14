@@ -17,7 +17,7 @@ date: 2020-04-29 18:52:32
 
 以 V2rayN 为例：
 
-![](https://i.loli.net/2020/04/29/DWgMcGLtrhjI6PO.png)
+![](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/DWgMcGLtrhjI6PO.png)
 
 ## 安装并使用 `polipo`
 

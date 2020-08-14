@@ -14,6 +14,7 @@ updated: 2019-08-27 17:23:38
 tags:
 ---
 
+Note for the course *Discrete-Time System Analysis*.
 
 <!--more-->
 
