@@ -71,6 +71,12 @@ tags:
 - `path`：你在 repo 内用于上传文件的目录，随意填写即可，这里使用 `img/`
 - `customUrl`：你的自定义域名，PicGo 上传图片后将会直接返回此处的自定义域名 + `path` 组合成的网址，这里设置为 JsDelivr CDN 的地址
 
+之后打开`~/.picgo/config.json`，按图中所示进行修改：
+
+![image-20200823214910498](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20200823214910498.png)
+
+之所以进行此项修改的原因是 picgo 可能默认将此项设置置为 `smms`。
+
 ## 配置 Typora
 
 在 Typora 的偏好设置→图像中，如图所示进行设置：
