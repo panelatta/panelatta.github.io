@@ -1,14 +1,15 @@
 ---
-title: [Leetcode 23]合并K个升序链表
-date: 2020-11-27 16:52:26
+title: '[Leetcode 23]合并K个升序链表'
 categories:
-	- Leetcode
-	- 链表
+  - Leetcode
+  - 链表
 tags:
-	- Leetcode
-	- Hard
-	- 链表
-	- 优先队列
+  - Leetcode
+  - Hard
+  - 链表
+  - 优先队列
+abbrlink: 96a5225a
+date: 2020-11-27 16:52:26
 ---
 
 第一次做链表相关的题，虽然是个水题，还是记录一下。
@@ -46,12 +47,12 @@ tags:
 
 提示：
 
-- k == lists.length
+- k == `lists.length`
 - 0 <= k <= 10^4
-- 0 <= lists[i].length <= 500
-- -10^4 <= lists[i][j] <= 10^4
-- lists[i] 按 升序 排列
-- lists[i].length 的总和不超过 10^4
+- 0 <= `lists[i].length` <= 500
+- -10^4 <= `lists[i][j]` <= 10^4
+- `lists[i]` 按 升序 排列
+- `lists[i].length` 的总和不超过 10^4
 
 ## 题解
 
