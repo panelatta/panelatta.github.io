@@ -1,22 +1,26 @@
 ---
-title: Leetcode-493-翻转对（逆序对，归并排序/树状数组）
-date: 2020-11-29 22:22:11
+title: '[Leetcode 493]翻转对（逆序对，归并排序/树状数组）'
 categories:
-	- Leetcode
-	- Data Structure
+  - Leetcode
+  - Data Structure
 tags:
-	- Leetcode
-	- Hard
-	- 逆序对
-	- 归并排序
-	- 树状数组
+  - Leetcode
+  - Hard
+  - 逆序对
+  - 归并排序
+  - 树状数组
+abbrlink: d389253c
+date: 2020-11-29 22:22:11
+toc: true
 ---
 
 一道逆序对的变体题目，稍作改变即可解决。
 
+<!--more-->
+
 ## 题面
 
-给定一个数组 `nums` ，如果 `i < j`且 `nums[i] > 2*nums[j]` 我们就将 `(i, j)` 称作一个重要翻转对。
+给定一个数组 `nums` ，如果 `i < j` 且 `nums[i] > 2*nums[j]` 我们就将 `(i, j)` 称作一个重要翻转对。
 
 你需要返回给定数组中的重要翻转对的数量。
 
@@ -108,7 +112,7 @@ public:
 
 与通常的树状数组维护逆序对不同，这里需要维护的是 ${\rm nums}[i]$ 与 $2\cdot{\rm nums}[j]$ 的关系，因此需要做如下变动：
 
-记 $n={\rm nums.size()}$，先将 ${\{{\rm nums}[i],\,2\cdot{\rm nums}[i]\;\;|\;\;0 \leq i < n\}}$ 离散化，记为 $m$；之后以 $[1..2n]$ 初始化树状数组；
+记 $n={\rm nums.size()}$，先将 ${ \{ {\rm nums}[i],\,2\cdot{\rm nums}[i]\;\;|\;\;0 \leq i < n \} }$ 离散化，记为 $m$；之后以 $[1..2n]$ 初始化树状数组；
 
 此时，对每个 $j\;(0 \leq j < n)$，我们试图统计 ${\rm nums}[j]$ 左侧大于 $2 \cdot {\rm nums}[j]$ 的数目。因此我们正向扫描 ${\rm nums}$，并在过程中对于每个 $j$：
 
