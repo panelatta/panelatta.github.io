@@ -1,8 +1,7 @@
 ---
-title: '[Leetcode 23]合并K个升序链表'
+title: '[Leetcode 23]合并K个升序链表（优先队列）'
 categories:
   - Leetcode
-  - 链表
 tags:
   - Leetcode
   - Hard
