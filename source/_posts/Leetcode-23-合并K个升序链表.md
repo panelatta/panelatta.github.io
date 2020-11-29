@@ -2,6 +2,7 @@
 title: '[Leetcode 23]合并K个升序链表（优先队列）'
 categories:
   - Leetcode
+  - Linked List
 tags:
   - Leetcode
   - Hard

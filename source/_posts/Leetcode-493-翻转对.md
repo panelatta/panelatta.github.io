@@ -3,6 +3,7 @@ title: Leetcode-493-翻转对（逆序对，归并排序/树状数组）
 date: 2020-11-29 22:22:11
 categories:
 	- Leetcode
+	- Data Structure
 tags:
 	- Leetcode
 	- Hard
