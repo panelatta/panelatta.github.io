@@ -42,11 +42,13 @@ long scale(long x, long y, long z) {
 
 ```asm
 scale:
-	leaq (%rdi, %rsi, 4), %rax	; x + 4 * y
-	leaq (%rdx, %rdx, 2), %rdx	; z + 2 * z = 3 * z
-	leaq (%rax, %rdx, 4), %rax	; (x + 4 * y) + 4 * (3 * z) = x + 4 * y + 12 * z
+	leaq (%rdi, %rsi, 4), %rax	# x + 4 * y
+	leaq (%rdx, %rdx, 2), %rdx	# z + 2 * z = 3 * z
+	leaq (%rax, %rdx, 4), %rax	# (x + 4 * y) + 4 * (3 * z) = x + 4 * y + 12 * z
 	ret
 ```
+
+> ${\bf N{\scriptsize OTE}}.$   注意 GNU assembler 使用 `#` 处理单行注释。
 
 之所以这样做，是因为 Intel 处理器有一个专门的地址运算单元，`leaq` 的运行不必经过 ALU，只需要单个时钟周期，显然比使用乘法指令 `imul` 要快得多。
 
@@ -123,11 +125,11 @@ long arith(long x, long y, long z) {
 
 ```asm
 arith:
-	xorq %rsi, %rdi				; t1 = x ^ y
-	leaq (%rdx, %rdx, 2), %rax	; z + 2 * z = 3 * z
-	salq $4, %rax				; t2 = (3 * z) << 4 = 16 * (3 * z) = 48 * z
-	andl $252645135, %edi		; t3 = 0x0F0F0F0F & (x ^ y)
-	subq %rdi, %rax				; t2 - t3
+	xorq %rsi, %rdi				# t1 = x ^ y
+	leaq (%rdx, %rdx, 2), %rax	# z + 2 * z = 3 * z
+	salq $4, %rax				# t2 = (3 * z) << 4 = 16 * (3 * z) = 48 * z
+	andl $252645135, %edi		# t3 = 0x0F0F0F0F & (x ^ y)
+	subq %rdi, %rax				# t2 - t3
 	ret
 ```
 
@@ -154,7 +156,7 @@ A. 将 `%rdx` 清零。这是因为对任何 $x$，有 ${\rm XOR}(x,x) = 0$。
 
 B. `movq $0, %rdx`
 
-C. 在 WSL(Ubuntu 20.04, Intel i5-3470) 平台上使用如下汇编代码编译 `.o` 文件：
+C. 在 WSL(Ubuntu 20.04, Intel i5-3470) 平台上使用如下汇编代码编译目标文件：
 
 ```asm
 a: xorq %rdx, %rdx
@@ -183,4 +185,128 @@ Disassembly of section .text:
 可见两条指令编码长度分别为 3 字节和 7 字节。
 
 > ${\bf N{\scriptsize OTE}}.$   此外，通过使用「生成 4 字节值并以寄存器作为目的操作数的指令会将高 4 字节置为 0」的特性，可以使用 `xorl` 和 `movl` 指令进一步压缩长度。
+>
+> 如：将如下汇编代码编译为目标文件：
+>
+> ```asm
+> a: movl $0, %eax
+> b: xorl %eax, %eax
+> c: nop
+> ```
+>
+> 使用 `objdump` 反汇编得：
+>
+> ```
+> test.o:     file format elf64-x86-64
+> 
+> 
+> Disassembly of section .text:
+> 
+> 0000000000000000 <a>:
+>    0:   b8 00 00 00 00          mov    $0x0,%eax
+> 
+> 0000000000000005 <b>:
+>    5:   31 c0                   xor    %eax,%eax
+> 
+> 0000000000000007 <c>:
+>    7:   90                      nop
+> ```
+>
+> 可见 `xorl` 和 `movl` 指令只分别需要 2 字节和 5 字节。
+>
+> 关于「生成 4 字节值并以寄存器作为目的操作数的指令会将高 4 字节置为 0」这一特性的效果，可以使用 `gdb` 进行测试：先编译如下代码：
+>
+> ```asm
+> .section .text
+> .globl _start
+> _start:
+>     movq $0xABCDABCDABCDABCD, %rax
+>     xorl %eax, %eax
+>     movq $3, %rax
+>     xorl %eax, %eax
+>     nop
+> ```
+>
+> 使用如下指令进行编译（`--gstabs+` 参数用于保留符号信息，用于调试）：
+>
+> ```sh
+> as -o test.o test.s --gstabs+
+> ld -o test test.o
+> ```
+>
+> 使用 `gdb` 进行调试，在 `_start` 处加断点，并使用 `i register <寄存器名称>` 打印寄存器的值：
+>
+> ```
+> Copyright (C) 2020 Free Software Foundation, Inc.
+> License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+> This is free software: you are free to change and redistribute it.
+> There is NO WARRANTY, to the extent permitted by law.
+> Type "show copying" and "show warranty" for details.
+> This GDB was configured as "x86_64-linux-gnu".
+> Type "show configuration" for configuration details.
+> For bug reporting instructions, please see:
+> <http://www.gnu.org/software/gdb/bugs/>.
+> Find the GDB manual and other documentation resources online at:
+>     <http://www.gnu.org/software/gdb/documentation/>.
+> 
+> For help, type "help".
+> Type "apropos word" to search for commands related to "word"...
+> Reading symbols from testtest...
+> (gdb) b _start
+> Breakpoint 1 at 0x401000: file testtest.s, line 4.
+> (gdb) run
+> Starting program: /mnt/d/programming/tempanswertest/testtest 
+> 
+> Breakpoint 1, _start () at testtest.s:4
+> 4           movq $0xABCDABCDABCDABCD, %rax
+> (gdb) i registers rax
+> rax            0x0                 0
+> (gdb) s
+> 5           xorl %eax, %eax
+> (gdb) i registers rax
+> rax            0xabcdabcdabcdabcd  -6067004223159161907
+> (gdb) s
+> 6           movq $3, %rax
+> (gdb) i registers rax
+> rax            0x0                 0
+> (gdb) s
+> 7           xorl %eax, %eax
+> (gdb) i registers rax
+> rax            0x3                 3
+> (gdb) s
+> 8           nop
+> (gdb) i registers rax
+> rax            0x0                 0
+> (gdb) s
+> Warning:
+> Cannot insert breakpoint 0.
+> Cannot access memory at address 0x1
+> 
+> 0x0000000000401016 in ?? ()
+> ```
 
+### 3.5.5 特殊的算术操作
+
+考虑两个 $w$ 位无符号整数 $x,y$ （$0 \leq x,y \leq 2^w - 1$），则有 $0 \leq x \cdot y \leq (2^w - 1)^2 = 2^{2w}-2^{w+1}+1$，也即 $x \cdot y$ 最多要用 $2w$ 位来表示；
+
+同样地，考虑两个 $w$ 位有符号整数 $x, y$（$-2^{w-1} \leq x,y \leq 2^{w-1}-1$），则有
+$$
+-2^{w-1} \cdot (2^{w-1}-1) \leq x \cdot y \leq (-2^{w-1})^2
+$$
+即
+$$
+-2^{2w-2}+2^{w-1} \leq x \cdot y \leq 2^{2w-2}
+$$
+最多需要 $2w-2$ 位；但是，考虑到计算机内寄存器的数位长度通常以 2 为倍数进行倍增，可以认为无论有/无符号，$x \cdot y$ 均需最多 $2w$ 位进行表示。
+
+因此，x86-64 指令集对长度为 128 位的八字（oct word）提供了有限支持。
+
+![图 3-12](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20201209220832447.png)
+
+在这组指令中，`%rdx` 和 `%rax` 共同组成一个 128 位的八字。
+
+在这组指令中，有两条单操作数乘法指令 `imulq` 和 `mulq`，都要求将一个参数预存在 `%rax` 中，并将乘积结果的低 64 位放在 `%rax` 中，将高 64 位放在 `%rdx` 中。同时，x86-64 指令集还提供一个双操作数乘法指令 `imulq`（与单操作数乘法指令名称相同），如图 3-10 所示；但运算结果只截取低 64 位，和 C 语言的无符号/补码乘法运算相同（参考 2.3）。在只截取低 64 位的情况下，无符号/乘法运算结果的二进制位表示是相同的，因此只需要一条指令即可处理。
+
+> ${\bf N{\scriptsize OTE}}.$   证明：$w$ 位的无符号乘法和补码乘法结果的二进制位表示相同。
+>
+> 
