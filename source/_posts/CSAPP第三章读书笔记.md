@@ -301,7 +301,7 @@ $$
 
 因此，x86-64 指令集对长度为 128 位的八字（oct word）提供了有限支持。
 
-![图 3-12](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20201209220832447.png)
+![图 3-12，中文版此处错误很多](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20201211182401521.png)
 
 在这组指令中，`%rdx` 和 `%rax` 共同组成一个 128 位的八字。
 
@@ -309,4 +309,75 @@ $$
 
 > ${\bf N{\scriptsize OTE}}.$   证明：$w$ 位的无符号乘法和补码乘法结果的二进制位表示相同。
 >
+> 考虑对位向量 $\vec{x} = [x_{w-1},x_{w-2},\cdots,x_0],\,\,x_i \in \{0,1\},\,\,i=0,1,\cdots,w-1$，
+>
+> $\vec{x}$ 对应的无符号编码的值表示为
+> $$
+> x_u = \sum_{i=0}^{w-1}x_i2^i
+> $$
+> $\vec{x}$ 对应的补码编码的值表示为
+> $$
+> x_t = -x_{w-1}2^{w-1}+\sum_{i=0}^{w-2}x_i2^i
+> $$
+> 显然有
+> $$
+> x_u = x_t + x_{w-1}2^w
+> $$
+> 因此，设 $x,y$ 是 $w$ 位无符号整数，则其对应的补码编码的值分别为 $x' = x + x_{w-1}2^w$，$y' = y + y_{w-1}2^w$。此时，考虑 $x'$ 与 $y'$ 的乘积截取低 $w$ 位的结果得：
+>
+> $$
+> \newcommand{\modop}{\,{\rm mod}\,}
+> \begin{aligned}
+> (x' \cdot y')\modop2^w &= [(x + x_{w-1}2^w) \cdot (y + y_{w-1}2^w)] \modop 2^w \\
+> &= [(x \cdot y) + x \cdot y_{w-1}2^w + y \cdot x_{w-1}2^w + x_{w-1}y_{w-1}2^{2w}] \modop 2^w \\
+> &= (x \cdot y) \modop 2^w
+> \end{aligned}
+> $$
 > 
+> 证毕。
+
+有/无符号整数除法指令 `idivq` 和 `divq` 只有单操作数版本，它们都将 `%rax` 作为被除数的低 64 位，`%rdx` 作为被除数的高 64 位；并把计算结果的商放在 `%rax` 中，余数放在 `%rdx` 中。
+
+在有符号运算的情况，可以用指令 `cqto` 将四字符号扩展到八字：被扩展的低 64 位值放在 `%rax` 中，指令会根据其符号位自动填充 `%rdx` 中的高 64 位值。如果有符号除法指令中的被除数是一个 64 位的值，则需要提前用 `cqto` 将其符号扩展至 128 位；无符号除法中则需要手动将 `%rdx` 置为 0。
+
+#### 练习题 3.12
+
+```asm
+uremdiv:
+	movq %rdx, %r8
+	movq %rdi, %rax
+	xorq %rdx, %rdx
+	divq %rsi
+	movq %rax, (%r8)
+	movq %rdx, (%rcx)
+	ret
+```
+
+## 3.6 控制
+
+### 3.6.1 条件码
+
+常用的条件码寄存器有如下几个：
+
+![image-20201211213740180](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20201211213740180.png)
+
+图 3-10 中，除了 `leaq` 外的所有指令都会重新设置条件码寄存器。
+
+![image-20201211214840300](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20201211214840300.png)
+
+此外，某些操作有一些特殊的行为：
+
+- 逻辑操作，例如 `xor`，会将 `CF` 和 `OF` 设置为 0。
+- 移位操作会将 `CF` 设置为最后一个被移出的位，`OF` 设置为 0。
+- `inc` 和 `dec` 指令会设置 `OF` 和 `ZF ` 标志，但是不会改变 `CF` 标志。
+
+还有 `cmp` 和 `test` 两类指令会设置条件码但不修改任何其他寄存器：
+
+![图 3-13](https://cdn.jsdelivr.net/gh/panelatta/static-resources/img/image-20201211221045372.png)
+
+其中，`cmp` 指令和 `sub` 指令的行为是一样的，`test` 指令和 `and` 指令的行为是一样的。
+
+当 `test` 指令的两个操作数相同时，可以用来判断一个值是负数，0，还是正数（例如，对 `%rax` 使用 `testq %rax, %rax`）；`test` 指令也可配合一个掩码来指定测试一个值中的某些位。
+
+### 3.6.2 访问条件码
+
