@@ -1,14 +1,15 @@
 ---
 title: MySQL相关笔记
 toc: true
-date: 2020-12-12 20:08:26
 categories:
-	- MySQL
+  - MySQL
 tags:
-	- MySQL
-	- Database
-	- SQL
-	- 读书笔记
+  - MySQL
+  - Database
+  - SQL
+  - 读书笔记
+abbrlink: 7780c75c
+date: 2020-12-12 20:08:26
 ---
 
 一些关于 SQL 及 MySQL 某些机制的相关笔记。

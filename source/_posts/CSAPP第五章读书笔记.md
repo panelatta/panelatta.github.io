@@ -1,12 +1,13 @@
 ---
 title: CSAPP第5章读书笔记
 toc: true
-date: 2020-12-05 22:07:36
 categories:
-	- CSAPP
+  - CSAPP
 tags:
-	- CSAPP
-	- 读书笔记
+  - CSAPP
+  - 读书笔记
+abbrlink: 43338f4c
+date: 2020-12-05 22:07:36
 ---
 
 CSAPP第五章的读书笔记。

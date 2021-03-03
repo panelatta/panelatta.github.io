@@ -1,12 +1,13 @@
 ---
 title: CSAPP第三章读书笔记
 toc: true
-date: 2020-12-07 22:25:19
 categories:
-	- CSAPP
+  - CSAPP
 tags:
-	- CSAPP
-	- 读书笔记
+  - CSAPP
+  - 读书笔记
+abbrlink: 6a85c6c7
+date: 2020-12-07 22:25:19
 ---
 
 CSAPP 第三章主要以理解 C 语言编译器产生的汇编代码为目的，简要介绍了 x86-64 汇编。
