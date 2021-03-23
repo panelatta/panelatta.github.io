@@ -1,12 +1,13 @@
 ---
 title: CSAPP第二章读书笔记
 toc: true
-date: 2020-12-09 22:50:06
 categories:
-	- CSAPP
+  - CSAPP
 tags:
-	- CSAPP
-	- 读书笔记
+  - CSAPP
+  - 读书笔记
+abbrlink: c4e08b16
+date: 2020-12-09 22:50:06
 ---
 
 CSAPP 第二章主要讲述了整数和浮点数在计算机中的存储与运算方式，及计算机内部表示信息的方式。
