@@ -17,8 +17,8 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.13
         with:
           hugo-version: 'latest'
           extended: true
@@ -40,3 +40,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
           publish_dir: ./public
+          cname: panelatta.top
